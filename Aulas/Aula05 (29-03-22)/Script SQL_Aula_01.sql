@@ -1,0 +1,28 @@
+CREATE TABLE Cadastro_2 (
+ id int NOT NULL,
+ nome varchar(40)NOT NULL,
+ email varchar(20),
+ telefone varchar(12),
+ CPF char(11),
+ valor_in numeric(10,2)
+ constraint pk_car PRIMARY KEY(id)
+ );
+ 
+SELECT*
+FROM Cadastro_2
+ ;
+ 
+DROP TABLE Cadastro_2;
+
+--INSERT CÓDIGO E NOME
+INSERT INTO Cadastro_2(id,nome) values(1,'Matt');
+ 
+INSERT INTO Cadastro_2(id,nome,email,telefone,CPF,valor_in)
+VALUES(01, 'Matt','matt@outlook.com','99478612','46923574501','1620000');
+
+INSERT INTO Cadastro_2(id,nome,email,telefone,CPF,valor_in)
+VALUES(02, 'Peter','peter@outlook.com','98756348','57631588901','1485000');
+
+INSERT INTO Cadastro_2(id,nome,email,telefone,CPF,valor_in)
+VALUES(03, 'Matin','Martin@gmail.com','43568975','78600346257','0267039');
+ 
